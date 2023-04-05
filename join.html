@@ -30,11 +30,11 @@
                   <legend>Datos de Usuario</legend>
                   <div class="form-group marcado">
                     <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" pattern="[A-Za-záéíóúÁÉÍÓÚñÑ']+(-[A-Za-záéíóúÁÉÍÓÚñÑ']+)?" minlength="2" maxlength="64" required placeholder="Nombre">
+                    <input type="text" id="nombre" name="nombre" pattern="[A-Za-záéíóúÁÉÍÓÚñÑ'-\s]+" minlength="2" maxlength="64" required placeholder="Nombre">
                   </div>
                   <div class="form-group marcado">
                     <label for="apellidos">Apellidos:</label>
-                    <input type="text" id="apellidos" name="apellidos" pattern="[A-Za-záéíóúÁÉÍÓÚñÑ']+(-[A-Za-záéíóúÁÉÍÓÚñÑ']+)?" minlength="2"  maxlength="128" required placeholder="Apellidos">
+                    <input type="text" id="apellidos" name="apellidos" pattern="[A-Za-záéíóúÁÉÍÓÚñÑ'-\s]+" minlength="2"  maxlength="128" required placeholder="Apellidos">
                   </div> 
                   <div class="form-group marcado">
                     <label for="email">Email:</label>
@@ -46,7 +46,7 @@
                   </div>
                   <div class="form-group">
                     <label for="fecha">Fecha de nacimiento:</label>
-                    <input type="date" id="fecha" name="fecha" pattern="[0-9]{9}" required placeholder="dd/mm/aaaaa">
+                    <input type="date" id="fecha" name="fecha" required placeholder="dd/mm/aaaaa">
                   </div>
                 </fieldset>
                 <fieldset  class="ajuste-form">
@@ -68,7 +68,7 @@
                         <input type="number" id="codigo-postal" name="codigo-postal" required min="1" max="99999" placeholder="11233">
                     </div>                   
                     <div class="form-group">
-                        <label for="numero_cuenta">Pais</label>
+                        <label for="pais">Pais</label>
                         <select name="pais" id="pais">
                             <option value="no_option" disabled selected>Seleccionar</option>
                             <option value="andorra">Andorra</option>
@@ -113,7 +113,7 @@
                         <p>Todos los campos marcados son obligatorios</p>
                     </div>
                     <div class="form-politica">
-                        <input type="checkbox" name="condiciones" id="condiciones"> <label for="condiciones">He leido y acepto la politica de privacidad y las condiciones de uso</label>
+                        <input type="checkbox" name="condiciones" id="condiciones" required> <label for="condiciones">He leido y acepto la politica de privacidad y las condiciones de uso</label>
                     </div>      
                 <button type="submit" class="boton-enviar">Enviar</button>
               </form>
