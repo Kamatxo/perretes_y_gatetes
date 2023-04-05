@@ -8,4 +8,4 @@ _Jorge Camacho Ochoa_,
 _[sobre mi](https://kamatxo.github.io/Curriculum-Vitae/)_
 --
 ## Página
-_[Ver página](https://kamatxo.github.io/Robots/)_
+_[Ver página](https://kamatxo.github.io/perretes_y_gatetes/)_
