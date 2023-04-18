@@ -190,10 +190,26 @@ footer .legal-links li {
     font-size: 3.4rem;
     margin-bottom: 15px;
     line-height: 4rem;
+    overflow: hidden;
+    height: 1%;
 }
 
 .page-home .title span{
     color:white;
+    float: left;
+}
+
+.page-home .title span.rotate-3d {
+  color: black;
+}
+
+.rotate-3d {
+  display: inline-block;
+  transition: transform .3s linear;
+}
+
+.rotate-3d:hover {
+  transform: rotate3d(0, 1, 0, 180deg);
 }
 
 .page-home .featured{
@@ -241,6 +257,11 @@ padding: 10px;
     margin-bottom: 30px;
     max-width: 700px;
     font-style: italic;
+    transition: all .2s ease-in-out; 
+}
+
+.page-rest figure:hover{
+  transform: scale(1.5);
 }
 
 /* Pagina Camisetas (tabla) */
